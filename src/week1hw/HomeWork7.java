@@ -11,13 +11,18 @@ public class HomeWork7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int a ,b ,c;
         System.out.print("Enter a: ");
-        a = scanner.nextInt();
+        int a = scanner.nextInt();
         System.out.print("Enter b: ");
-        b = scanner.nextInt();
+        int b = scanner.nextInt();
 
-        c=a/b;
+        if (a < b) {
+            int tmp = a;
+            a = b;
+            b = tmp;
+        }
+        int c = a / b;
+
         if (a%b == 0){
             System.out.println("true");
             System.out.print(c);
@@ -25,7 +30,8 @@ public class HomeWork7 {
         else {
             System.out.println("false");
             System.out.println(c);
-            System.out.print(a%b);
+            System.out.print(a % b);
         }
+
     }
 }
