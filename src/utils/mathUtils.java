@@ -1,4 +1,4 @@
-package util;
+package utils;
 
 //                      (void - if nothing to return)
 //    public  static <returnType> <name_verb>  {
@@ -7,7 +7,7 @@ package util;
 //
 //    return <arg>;}
 
-public class mathUtil {
+public class mathUtils {
     public static  double roundToHundreds(double number){
 
 //        logic

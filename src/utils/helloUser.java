@@ -1,4 +1,4 @@
-package util;
+package utils;
 
 /**
  * Created by pc on 21.11.2015.

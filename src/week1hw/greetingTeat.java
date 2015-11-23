@@ -1,6 +1,6 @@
 package week1hw;
 
-import util.helloUser;
+import utils.helloUser;
 
 /**
  * Created by pc on 21.11.2015.
