@@ -59,4 +59,22 @@ public class arrayUtils {
         return array;
     }
 
+    public static int findMinMaxElementOfArray (int[] array, String parametr){
+        int i = 1;
+//        String par = new String (parametr);
+        if  (parametr.equals("min")){
+            int minElement = array[0];
+            while (i < array.length){
+                if (array[i] < minElement) minElement = array[i];
+                i++;
+            } return minElement;
+        } else if (parametr.equals("max")){
+            int maxElement = array[0];
+            while (i < array.length){
+                if (array[i] > maxElement) maxElement = array[i];
+                i++;
+            } return maxElement;
+        } else System.out.println("Wrong parametr. Use min or max.");
+        return 0;
+    }
 }
