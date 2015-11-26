@@ -139,4 +139,13 @@ public class arrayUtils {
         }
         return arrayOut;
     }
+
+    public static int[] arrayInvert (int[] arrayIn) {
+        int temp = 0;
+        for (int i = 0; i <= arrayIn.length / 2; i++){
+            temp = arrayIn[i];
+            arrayIn[i] = arrayIn[arrayIn.length - 1 - i];
+            arrayIn[arrayIn.length - 1 - i] = temp;
+        } return arrayIn;
+    }
 }
