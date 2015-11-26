@@ -47,7 +47,7 @@ public class arrayUtils {
     public static int[] createRandomUnicalElementsArray(int size, int range){
         int[] numbers = new int[size];
         for (int i = 0; i < size; i++){
-            do { numbers[i] = getGenerateRandomDigit(43);
+            do { numbers[i] = getGenerateRandomDigit(range);
         } while (unicalElementOfArray(numbers,i) == false);
 
         }
@@ -121,10 +121,22 @@ public class arrayUtils {
 
     public static int findEquialElements (int[] array1, int array2[]){
         int counter = 0;
-        for (int i = 0; i < array1.length - 1; i++){
-            for (int j = 0; j < array2.length - 1; j++){
-                if (array1[i] == array2[i]) counter++;
+        for (int i = 0; i < array1.length; i++){
+            for (int j = 0; j < array2.length; j++){
+                if (array1[i] == array2[j]) counter++;
             }
         } return counter;
+    }
+
+    public static int[] moveArrayRight (int[] arrayIn, int move){
+        int[] arrayOut = new int[arrayIn.length];
+        int i;
+        for ( i = 0; i < move; i++){
+            arrayOut[arrayOut.length - move + i] = arrayIn[i];
+        }
+        for ( ; i < arrayOut.length; i++){
+            arrayOut[i - move] = arrayIn[i];
+        }
+        return arrayOut;
     }
 }
