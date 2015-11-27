@@ -43,7 +43,7 @@ public class _11StringTest {
         System.out.println(newName);
         System.out.println(compare);
         System.out.println(" ");
-        System.out.println(stringUtils.letterCounter(name,'a'));
-        System.out.println(stringUtils.letterCounter(name2,'a'));
+        System.out.println(stringUtils.letterCounter(name,"a"));
+        System.out.println(stringUtils.letterCounter(name2,"a"));
     }
 }
