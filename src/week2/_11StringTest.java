@@ -1,5 +1,7 @@
 package week2;
 
+import utils.stringUtils;
+
 /**
  * Created by pc on 22.11.2015.
  */
@@ -7,7 +9,7 @@ public class _11StringTest {
     public static void main(String[] args) {
         String name = new String("jenja");
         System.out.println(name);
-        String name2 = "Jenja";
+        String name2 = "Aaleg";
         System.out.println(name2);
         char[] letters = {'O', 'l', 'j', 'a'};
         String name3 = new String(letters);
@@ -40,5 +42,8 @@ public class _11StringTest {
         System.out.println(names);
         System.out.println(newName);
         System.out.println(compare);
+        System.out.println(" ");
+        System.out.println(stringUtils.letterCounter(name,'a'));
+        System.out.println(stringUtils.letterCounter(name2,'a'));
     }
 }
