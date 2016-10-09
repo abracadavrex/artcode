@@ -11,6 +11,6 @@ public class HomeWorkAd1 {
         System.out.print("Enter decimal number: ");
         int num = scanner.nextInt();
         System.out.print("Your number in binary: " + Integer.toBinaryString(num));
-
+//.
     }
 }
