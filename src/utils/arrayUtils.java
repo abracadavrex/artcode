@@ -66,6 +66,9 @@ public class arrayUtils {
     private static int getGenerateRandomDigit(int range){
         return (int)(Math.random() * range);
     }
+    public static int getGenerateRandomDigit1(int range){
+        return (int)(Math.random() * range);
+    }
 
     public static int[] sortArray (int[] array) {
         for (int j = 0; j < array.length; j++){

@@ -7,7 +7,7 @@ package utils;
 //
 //    return <arg>;}
 
-public class mathUtils {
+public class MathUtils {
     public static  double roundToHundreds(double number){
 
 //        logic
